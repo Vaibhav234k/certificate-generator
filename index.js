@@ -45,7 +45,7 @@ const generatePDF = async (name) => {
   const firstPage = pages[0];
 
   var Textwidth = getTextWidth(userName.value, 65);
-  var x = ((width/2) - (Textwidth / 2)) + 90;
+  var x = ((width/2) - (Textwidth / 2)) + 100;
   // Draw a string of text diagonally across the first page
   firstPage.drawText(name, {
     x: x,
